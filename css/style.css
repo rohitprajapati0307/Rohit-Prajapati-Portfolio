@@ -372,14 +372,16 @@ img {
 
 .header {
     padding: 20px 15px;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
+    position: sticky;
+    background-color: #eff0f4;
 }
 
-.header .logo a {
+/* .header .logo a {
     display: inline-block;
     text-align: center;
     line-height: 38px;
@@ -394,7 +396,56 @@ img {
     margin: 30px 0px 0 27px;
     position: absolute;
     z-index: 999;
+} */
+
+
+/* logo */
+
+
+.header .logo .circle-container {
+    position: relative;
+    width: 50px;
+    /* Adjust the width of the circle */
+    height: 50px;
+    /* Adjust the height of the circle */
+    font-weight: bold;
+    border: 1px solid  var(--skin-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.header .logo #circ {
+    font-size: 0.6rem;
+    /* Adjust the font size */
+    /* font-family: 'cousine', monospace;
+    text-transform: uppercase; */
+    animation: spin 14s linear infinite;
+    color: var(--skin-color);
+    white-space: nowrap;
+    position: absolute;
+}
+
+.header .logo #rk {
+    font-size: 0.65rem;
+    line-height: 1;
+    text-align: center;
+    /* Adjust the font size for "RK" */
+    color: var(--text-black-900);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 
 
 .header .hamburger-btn {
@@ -1503,6 +1554,16 @@ img {
     word-break: break-word;
 }
 
+.contact-section .from-box {
+    padding: 30px 10px;
+    margin: 0 15px;
+    border-radius: 5px;
+}
+.contact-section .from-box .data-sv-success{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--skin-color);
+}
 .contact-section .contact-form {
     flex: 0 0 100%;
     max-width: 100%;
@@ -1552,3 +1613,4 @@ img {
 
 
 /* ------------------    Contact Section End     -------------*/
+
