@@ -294,15 +294,15 @@ function bodyScrollingToggle() {
 })();
 /* ------------------- Testimonial Slider End  ------------------------*/
 /* ------------------- Hide All Sections Except Active Start  ------------------------*/
-// (() => {
-//     const section = document.querySelectorAll(".section");
-//     section.forEach((section) => {
-//         if (!section.classList.contains("active")) {
-//             section.classList.add("hide")
-//         }
-//     })
+(() => {
+    const section = document.querySelectorAll(".section");
+    section.forEach((section) => {
+        if (!section.classList.contains("active")) {
+            section.classList.add("hide")
+        }
+    })
 
-// })();
+})();
 
 /* ------------------- Hinde All Sections Except Active End ------------------------*/
 

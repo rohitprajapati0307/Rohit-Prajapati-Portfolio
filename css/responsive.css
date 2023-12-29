@@ -21,6 +21,10 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+    .header .logo #circ {
+        font-size: 0.46rem;
+    }
     .home-section .home-text {
         order: 2;
     }
@@ -37,6 +41,9 @@
     }
     .effect-3 {
         margin-left: -60px;
+        height: 140px;
+        width: 140px;
+        top: -100px;
     }
     .effect-4 {
         left: 15%;
