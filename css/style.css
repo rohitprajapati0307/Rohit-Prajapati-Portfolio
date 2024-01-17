@@ -747,7 +747,43 @@
     top: 7px;
     position: absolute;
     border-radius: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 4px var(--inner-shadow);
+    overflow: hidden;
   }
+
+
+  /* .about-section .skills .skill-item .progress-bar {
+    background-color: var(--text-black-600);
+    height: 6px;
+    left: 7px;
+    top: 7px;
+    position: absolute;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 4px #ffffffd1;
+    overflow: hidden;
+} */
+.about-section .skills .skill-item .progress-bar:before {
+  content: '';
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  animation: progress-anime 10s ease-out infinite;
+  background: linear-gradient(to right, var(--skin-color) 0%,var(--text-black-600) 50%, var(--bg-black-50) 50%, var(--bg-opacity) 100%);
+}
+@keyframes progress-anime {
+  0% {left: -100%;}
+  75% {left: -5%;}
+  85% {left: -5%;}
+  95% {left: 0;}
+}
+
+
+
+
+
+
   .about-section .skills .skill-item .progress-bar span {
     position: absolute;
     right: 0;
