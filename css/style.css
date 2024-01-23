@@ -800,6 +800,80 @@
     color: var(--text-black-600);
     margin-top: -40px;
   }
+
+
+
+  .about-section .skills .certificates-title {
+    margin: 0 auto;
+    padding: 30px 15px 30px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+  
+
+  .about-section .skills .custom-slider {
+    width: 90%;
+    margin: auto;
+}
+
+ .custom-box {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    box-shadow: var(--outer-shadow);
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.slick-prev, .slick-next {
+    position: absolute;
+    line-height: 0;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    display: block;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: #043e46;
+}
+
+.slick-slider {
+    user-select: none;
+}
+
+.slick-next {
+    right: -30px;
+}
+
+.slick-prev {
+    left: -30px;
+}
+
+.slick-next:before {
+    content: '\003e';
+    font-size: 1.2em;
+    font-weight: 1000;
+    padding-left: 12px;
+    color: white;
+}
+
+.slick-prev:before {
+    content: '\003c';
+    font-size: 1.2em;
+    font-weight: 1000;
+    padding-left: 9px;
+    color: white;
+}
+
   .about-section .education,
   .about-section .experience {
     padding-bottom: 80px;

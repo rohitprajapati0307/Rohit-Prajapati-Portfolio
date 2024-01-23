@@ -27,6 +27,12 @@
         disabled>
     <link rel="stylesheet" type="text/css" class="alternate-style" title="color-5" href="css/skins/color-5.css"
         disabled>
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+
     <link rel="stylesheet" type="text/css" href="css/style-switcher.css">
 </head>
 
@@ -313,7 +319,7 @@
                     <!----- skill item end ---->
                     <!----- skill item start  ---->
                     <div class="skill-item">
-                        <p>Adobe development</p>
+                        <p>Adobe Photoshop</p>
                         <div class="progress inner-shadow">
                             <div class="progress-bar" style="width: calc(75% - 14px)">
                                 <span>75%</span>
@@ -322,6 +328,68 @@
                     </div>
                     <!----- skill item end ---->
                 </div>
+
+
+                <div class="row">
+
+                    <div class="certificates-title">
+                        <h3 class="sub-heading-txt certificates-text"> Certificates </h3>
+                    </div>
+
+                    <div class="custom-slider">
+                        <div class="custom-box" data-mfp-src="./img/Skill/Prajapati Rohit K.png">
+                            <div>
+                                <img src="./img/Skill/Prajapati Rohit K.png" alt=" Rohit Rohir">
+                                <span class="sub-heading-txt"> Hello! </span>
+                            </div>
+                        </div>
+                        <div class="custom-box" data-mfp-src="./img/Skill/Prajapati Rohit K.png">
+                            <div>
+                                <img src="./img/Skill/Prajapati Rohit K.png" alt=" ">
+                                <span class="sub-heading-txt"> Hello! </span>
+                            </div>
+                        </div>
+                        <div class="custom-box" data-mfp-src="./img/Skill/Prajapati Rohit K.png">
+                            <div>
+                                <img src="./img/Skill/Prajapati Rohit K.png" alt=" ">
+                                <span class="sub-heading-txt"> Hello! </span>
+                            </div>
+                        </div>
+                        <div class="custom-box" data-mfp-src="./img/Skill/Prajapati Rohit K.png">
+                            <div>
+                                <img src="./img/Skill/Prajapati Rohit K.png" alt=" ">
+                                <span class="sub-heading-txt"> Hello! </span>
+                            </div>
+                        </div>
+                        <div class="custom-box" data-mfp-src="./img/Skill/Prajapati Rohit K.png">
+                            <div>
+                                <img src="./img/Skill/Prajapati Rohit K.png" alt=" ">
+                                <span class="sub-heading-txt"> Hello! </span>
+                            </div>
+                        </div>
+                        <div class="custom-box" data-mfp-src="./img/Skill/Prajapati Rohit K.png">
+                            <div>
+                                <img src="./img/Skill/Prajapati Rohit K.png" alt=" ">
+                                <span class="sub-heading-txt"> Hello! </span>
+                            </div>
+                        </div>
+                        <div class="custom-box" data-mfp-src="./img/Skill/Prajapati Rohit K.png">
+                            <div>
+                                <img src="./img/Skill/Prajapati Rohit K.png" alt=" ">
+                                <span class="sub-heading-txt"> Hello! </span>
+                            </div>
+                        </div>
+                        <div class="custom-box" data-mfp-src="./img/Skill/Prajapati Rohit K.png">
+                            <div>
+                                <img src="./img/Skill/Prajapati Rohit K.png" alt=" ">
+                                <span class="sub-heading-txt"> Hello! </span>
+                            </div>
+                        </div>
+                        <!-- Add other custom-box divs similarly for other images -->
+                    </div>
+                </div>
+
+
             </div>
         </div>
         <!-------------      Skills End    ----------->
@@ -1571,6 +1639,58 @@
     </script>
 
 
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.custom-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 550,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: false
+                        }
+                    }
+                ]
+            });
+    
+            $('.custom-box').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+    </script>
 
 
 
