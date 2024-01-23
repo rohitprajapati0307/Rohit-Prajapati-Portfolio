@@ -36,9 +36,11 @@
 .style-switcher .s-icon::after {
     border-radius: 50%;
 }
-
+.style-switcher .s-icon .fa-cog:before {
+    color: var(--bg-black-900);
+}
 .style-switcher .s-icon .fa-sun:before {
-    color: #fff;
+    color: var(--bg-black-900);
 }
 
 .style-switcher .style-switcher-toggler {

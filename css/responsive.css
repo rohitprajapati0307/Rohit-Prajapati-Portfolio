@@ -4,6 +4,14 @@
         flex: 0 0 50%;
         max-width: 50%;
     }
+
+    .portfolio-section .portfolio-filter{
+        width: 90%;
+        overflow: scroll;
+        margin: 0 auto 25px auto;
+        display: block;
+        white-space: nowrap;
+    }
 }
 
 @media (max-width:767px) {
@@ -43,7 +51,7 @@
         margin-left: -60px;
         height: 140px;
         width: 140px;
-        top: -100px;
+        top: -150px;
     }
     .effect-4 {
         left: 15%;
