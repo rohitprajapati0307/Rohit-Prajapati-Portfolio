@@ -811,6 +811,12 @@
     text-align: center;
 }
   
+.skills.tab-content.active .separator {
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: var(--bg-black-100);
+}
 
   .about-section .skills .custom-slider {
     width: 90%;
@@ -859,19 +865,26 @@
 }
 
 .slick-next:before {
-    content: '\003e';
+    /* content: '\003e';
     font-size: 1.2em;
     font-weight: 1000;
-    padding-left: 12px;
-    color: white;
+    padding-left: 12px; */
+    color: var(--skin-color) !important;
 }
 
 .slick-prev:before {
-    content: '\003c';
+    /* content: '\003c';
     font-size: 1.2em;
     font-weight: 1000;
-    padding-left: 9px;
-    color: white;
+    padding-left: 9px; */
+    color: var(--skin-color) !important;
+}
+
+.slick-track .custom-box.slick-slide img{
+margin-bottom: 10px;
+}
+.slick-track .custom-box.slick-slide .sub-heading-txt{
+  color: var(--text-black-600);
 }
 
   .about-section .education,
