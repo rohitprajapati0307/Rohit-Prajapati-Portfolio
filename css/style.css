@@ -1118,7 +1118,9 @@ text {
   font-style: italic;
   font-weight: bold;
 }
-
+.about-section .timeline .timeline-item-inner .readmore span a:hover{
+  color: var(--skin-color);
+}
 /* ------------------   About Section End    -------------*/
 
 /* ------------------   Services Section Start    -------------*/
