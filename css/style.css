@@ -1014,6 +1014,13 @@ text {
   padding-right: calc(50% + 50px);
   text-align: right;
 }
+.about-section .timeline .timeline-item:nth-child(odd) span.ellipsis {
+  text-align: right;
+}
+.about-section .timeline .timeline-item:nth-child(odd) a.more{
+  text-align: right;
+}
+
 
 .about-section .timeline .timeline-item:nth-child(even) {
   padding-left: calc(50% + 50px);
@@ -1099,6 +1106,7 @@ text {
 
 .about-section .timeline .timeline-item-inner .readmore {
   color: var(--text-black-600);
+  text-align: justify;
 }
 
 .about-section .timeline .timeline-item-inner .readmore span {
