@@ -977,7 +977,7 @@ text {
 }
 
 .slick-track .custom-box.slick-slide .sub-heading-txt {
-  color: var(--text-black-600);
+  color: var(--skin-color);
 }
 
 .about-section .education,
