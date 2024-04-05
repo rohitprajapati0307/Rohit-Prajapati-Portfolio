@@ -877,11 +877,6 @@ text {
   }
 }
 
-
-
-
-
-
 .about-section .skills .skill-item .progress-bar span {
   position: absolute;
   right: 0;
@@ -891,8 +886,6 @@ text {
   color: var(--text-black-600);
   margin-top: -40px;
 }
-
-
 
 .about-section .skills .certificates-title {
   margin: 0 auto;
@@ -1000,8 +993,6 @@ text {
   position: absolute;
   /* background-color: var(--bg-black-100); */
   background-color: var(--text-black-700);
-
-
 }
 
 .about-section .timeline .timeline-item {
@@ -1020,7 +1011,6 @@ text {
 .about-section .timeline .timeline-item:nth-child(odd) a.more{
   text-align: right;
 }
-
 
 .about-section .timeline .timeline-item:nth-child(even) {
   padding-left: calc(50% + 50px);
@@ -1129,6 +1119,85 @@ text {
 .about-section .timeline .timeline-item-inner .readmore span a:hover{
   color: var(--skin-color);
 }
+
+
+
+.about-section .timeline .timeline-item {
+  position: relative;
+}
+
+.about-section .timeline .timeline-item-inner {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.about-section .timeline .company-logo {
+  position: absolute;
+  top: 50%;
+  width: 75px;
+  /* Adjust the width as needed */
+  height: 75px;
+  /* Adjust the height as needed */
+  border-radius: 10%;
+  overflow: hidden;
+  display: none;
+}
+
+.about-section .timeline .company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-section .timeline .company-name {
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+}
+
+.about-section .timeline .company-name:hover+.company-logo,
+.about-section .timeline .company-logo:hover {
+  display: block;
+}
+
+.about-section .timeline .timeline-item:hover .company-logo {
+  opacity: 1;
+}
+
+.about-section .timeline .company-logo {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  width: 75px;
+  /* Adjust the width as needed */
+  height: 75px;
+  /* Adjust the height as needed */
+  transition: opacity 0.3s ease;
+  /* Add a transition effect for opacity */
+  opacity: 0;
+}
+
+.about-section .timeline .timeline-item:nth-child(odd) .company-logo {
+  left: 5%;
+}
+
+.about-section .timeline .timeline-item:nth-child(even) .company-logo {
+  right: 5%;
+}
+
+/* Initially hide the skill logos */
+.skill-item .skill-logo {
+  display: none;
+}
+
+/* Show the skill logo when hovering over the skill item */
+.skill-item:hover .skill-logo {
+  display: block;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  margin: 0 auto; /* Center the image */
+}
+
 /* ------------------   About Section End    -------------*/
 
 /* ------------------   Services Section Start    -------------*/
@@ -1790,80 +1859,3 @@ text {
 
 /* ------------------    Copyright Section End     -------------*/
 
-
-
-
-
-
-.about-section .timeline .timeline-item {
-  position: relative;
-}
-
-.about-section .timeline .timeline-item-inner {
-  position: relative;
-  /* overflow: hidden; */
-}
-
-.about-section .timeline .company-logo {
-  position: absolute;
-  top: 50%;
-  width: 75px;
-  /* Adjust the width as needed */
-  height: 75px;
-  /* Adjust the height as needed */
-  border-radius: 10%;
-  overflow: hidden;
-  display: none;
-}
-
-.about-section .timeline .company-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.about-section .timeline .company-name {
-  cursor: pointer;
-  text-decoration: underline;
-  color: blue;
-}
-
-.about-section .timeline .company-name:hover+.company-logo,
-.about-section .timeline .company-logo:hover {
-  display: block;
-}
-
-/* .about-section .timeline .timeline-item:nth-child(odd) {
-    padding-right: calc(50% + 50px);
-    text-align: right;
-  }
-  
-  .about-section .timeline .timeline-item:nth-child(even) {
-    padding-left: calc(50% + 50px);
-    text-align: left;
-  } */
-
-.about-section .timeline .timeline-item:hover .company-logo {
-  opacity: 1;
-}
-
-.about-section .timeline .company-logo {
-  position: absolute;
-  top: 20%;
-  transform: translateY(-50%);
-  width: 75px;
-  /* Adjust the width as needed */
-  height: 75px;
-  /* Adjust the height as needed */
-  transition: opacity 0.3s ease;
-  /* Add a transition effect for opacity */
-  opacity: 0;
-}
-
-.about-section .timeline .timeline-item:nth-child(odd) .company-logo {
-  left: 5%;
-}
-
-.about-section .timeline .timeline-item:nth-child(even) .company-logo {
-  right: 5%;
-}
