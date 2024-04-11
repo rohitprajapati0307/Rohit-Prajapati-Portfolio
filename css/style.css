@@ -427,10 +427,10 @@ text {
 }
 
 .header .logo #circ {
-  font-size: 0.56rem;
+  font-size: 0.75rem;
   /* Adjust the font size */
   animation: spin 14s linear infinite;
-  color: var(--skin-color);
+  color: var(--text-black-900);
   white-space: nowrap;
   position: absolute;
 }
@@ -440,11 +440,16 @@ text {
   line-height: 1;
   text-align: center;
   /* Adjust the font size for "RK" */
-  color: var(--text-black-900);
+  color: var(--skin-color);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.header .logo #rk hr.rkhr {
+  margin: 2px auto;
+  color: var(--text-black-900);
+  border-width: 0.1rem;
 }
 
 @keyframes spin {
