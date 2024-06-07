@@ -449,7 +449,7 @@ text {
 .header .logo #rk hr.rkhr {
   margin: 2px auto;
   color: var(--text-black-900);
-  border-width: 0.1rem;
+  border-width: 0.03rem;
 }
 
 @keyframes spin {
